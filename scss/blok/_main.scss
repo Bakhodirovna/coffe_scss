@@ -322,3 +322,28 @@
 .works__button:hover{
     background: #66D2CF;
 }
+
+
+/* Retina-specific stuff here */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  .hero__info{
+    background-image: url(../images/coffe-fon-2x.jpg);
+    background-repeat: no-repeat;
+    // background-size: 100% 100%;
+    background-size: contain;
+    background-position: center;
+  }
+  .collection{
+    background-image: url(../images/collection-2x.jpg);
+    background-position:top -72px  center ;
+    background-repeat: no-repeat;
+    background-size: 1300px;
+  }
+  
+} 

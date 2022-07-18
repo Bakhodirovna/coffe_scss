@@ -61,7 +61,6 @@
 }
 
 
-
 .fon{
     margin-top: 100px;
     background-image: url(../images/fon.png);
@@ -80,8 +79,8 @@
     margin-top: 168px ;
     margin-left: 98px;
     display: flex;
-    background-image: url(../../images/commitment.png);
     border-radius: 10px;
+    background-image: url(../../images/commitment.png);
     background-repeat: no-repeat;
     background-position: left 0 center;
     background-size: 485px 606px;
@@ -221,3 +220,32 @@
     }
 }
 }
+
+
+/* Retina-specific stuff here */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+    .home{
+        margin-top: 100px;
+        background-image: url(../../images/home-2x.png);
+        background-size: 100% 100%;
+    }
+    .commitment{
+        background-image: url(../../images/commitment-2x.png);
+        background-repeat: no-repeat;
+        background-position: left 0 center;
+        background-size: 485px 606px;
+    }
+    .quality::after{
+        content: url(../../images/quality-2x.jpg);
+        position: absolute;
+        left: 850px;
+        top: -87px;
+    }
+  
+} 
