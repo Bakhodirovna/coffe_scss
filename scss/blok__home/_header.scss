@@ -7,17 +7,16 @@
     z-index: 999999;
 
 &__box{
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
+        align-items: center;
+
     }
 &__navbar{
         margin-left: auto;
     }
 &__navbar>ul{
         list-style: none;
-        display: -webkit-box;
-        display: -ms-flexbox;
+        margin-left: auto;
         display: flex;
     }
 &__navbar>ul>li>a{

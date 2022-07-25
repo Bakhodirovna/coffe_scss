@@ -1,6 +1,6 @@
 /* section1 style */
 .hero__info{
-    margin-top: 130px;
+    margin-top: 18px;
     background-image: url(../images/coffe-fon.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -100,7 +100,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;
-    width: 540px;
+    width: 440px;
     color: #333D4B;
     mix-blend-mode: normal;
     opacity: 0.8;
@@ -109,7 +109,7 @@
     display: flex;
     flex-direction: column;
     margin-top: 100px;
-    margin-left: 650px;
+    margin-left: 613px;
 }
 
 }
@@ -118,15 +118,15 @@
     margin-top: 198px;
     background-color: #2C343E;
     border-radius: 10px;
-    padding: 88px 85px;
-    padding-bottom: 120px;
+    padding: 25px 85px;
+    padding-bottom: 140px;
     display: flex;
     position: relative;
 &::after{
     content: url(../../images/quality.jpg);
     border-radius:10px;
     position: absolute;
-    left: 850px;
+    left: 710px;
     top: -87px;
 }
 &__title{
@@ -232,17 +232,17 @@ only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) { 
     .home{
         margin-top: 100px;
-        background-image: url(../../images/home-2x.png);
+        background-image: url(../../images/home.webp);
         background-size: 100% 100%;
     }
     .commitment{
-        background-image: url(../../images/commitment-2x.png);
+        background-image: url(../../images/commitment.webp);
         background-repeat: no-repeat;
         background-position: left 0 center;
         background-size: 485px 606px;
     }
     .quality::after{
-        content: url(../../images/quality-2x.jpg);
+        content: url(../../images/quality.webp);
         position: absolute;
         left: 850px;
         top: -87px;

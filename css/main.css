@@ -367,11 +367,16 @@ img {
 }
 
 .container {
-  width: 1440px;
+  width: 1260px;
   padding: 0 20px;
   margin: 0 auto;
 }
 
+@media screen and (max-width: 1090px) {
+  .container {
+    padding: 10px;
+  }
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -394,6 +399,7 @@ img {
 
 .header__box {
   display: flex;
+  align-items: center;
 }
 
 .header__navbar {
@@ -402,6 +408,7 @@ img {
 
 .header__navbar > ul {
   list-style: none;
+  margin-left: auto;
   display: flex;
 }
 
@@ -427,7 +434,7 @@ img {
 
 /* section1 style */
 .hero__info {
-  margin-top: 130px;
+  margin-top: 18px;
   background-image: url(../images/coffe-fon.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -448,6 +455,7 @@ img {
   font-size: 72px;
   line-height: 72px;
   color: #FEFCF7;
+  width: 493px;
 }
 
 .hero__text {
@@ -464,7 +472,7 @@ img {
 }
 
 .hero__button {
-  font-family: "Fraunces";
+  font-family: "Fraunces", sans-serif;
   font-style: normal;
   font-weight: 900;
   font-size: 18px;
@@ -476,7 +484,7 @@ img {
   width: 217px;
   border: none;
   padding: 15px 31px;
-  margin-top: 56px;
+  margin: 56px 0;
 }
 
 .hero__button:hover {
@@ -486,17 +494,18 @@ img {
 /* section2 style */
 .collection__info {
   display: flex;
-  margin-top: 150px;
+  margin-top: 98px;
   height: 524px;
-  margin-left: 70px;
+  margin-left: 2px;
   padding-top: 100px;
+  width: 1173px;
 }
 
 .collection {
   background-image: url(../images/collection.jpg);
-  background-position: top -72px center;
+  background-position: top -18px center;
   background-repeat: no-repeat;
-  background-size: 1300px;
+  background-size: 1100px;
 }
 
 .collection__info > ul {
@@ -505,17 +514,13 @@ img {
   z-index: 9;
 }
 
-.collection__info > ul > li {
-  width: 255px;
-}
-
 .collection__info > ul > li + li {
-  margin-left: 80px;
+  margin-left: 66px;
 }
 
 .collection__title {
   margin-top: 71px;
-  font-family: "Fraunces ";
+  font-family: "Fraunces";
   font-style: normal;
   font-weight: 900;
   font-size: 24px;
@@ -547,6 +552,9 @@ img {
   bottom: 50px;
   padding: 100px 370px;
   padding-bottom: 317px;
+}
+.services__info > div + div {
+  margin-left: 20px;
 }
 
 .services__title {
@@ -635,7 +643,10 @@ img {
 /* section4 style */
 .works {
   margin-top: 200px;
-  margin-left: 140px;
+  margin-left: 109px;
+}
+.works__info {
+  margin-left: -51px;
 }
 
 .works__title-top {
@@ -747,13 +758,28 @@ img {
   border-radius: 6px;
   padding: 15px 31px;
   margin-top: 64px;
-  /* margin-left: 185px; */
+  margin-left: 34px;
 }
 
 .works__button:hover {
   background: #66D2CF;
 }
 
+/* Retina-specific stuff here */
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .hero__info {
+    background-image: url(../images/coffe-fon-2x.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  .collection {
+    background-image: url(../images/collection-2x.jpg);
+    background-position: top -72px center;
+    background-repeat: no-repeat;
+    background-size: 1300px;
+  }
+}
 .footer {
   margin-top: 200px;
   background-color: #2C343E;
@@ -769,7 +795,7 @@ img {
   display: flex;
   text-decoration: none;
   list-style: none;
-  margin-left: 274px;
+  margin-left: 210px;
 }
 
 .footer__navbar {
@@ -812,11 +838,16 @@ img {
 }
 
 .container {
-  width: 1440px;
+  width: 1260px;
   padding: 0 20px;
   margin: 0 auto;
 }
 
+@media screen and (max-width: 1090px) {
+  .container {
+    padding: 10px;
+  }
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -839,6 +870,7 @@ img {
 
 .header__box {
   display: flex;
+  align-items: center;
 }
 
 .header__navbar {
@@ -847,6 +879,7 @@ img {
 
 .header__navbar > ul {
   list-style: none;
+  margin-left: auto;
   display: flex;
 }
 
@@ -872,7 +905,7 @@ img {
 
 /* section1 style */
 .hero__info {
-  margin-top: 130px;
+  margin-top: 18px;
   background-image: url(../images/coffe-fon.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -1294,6 +1327,14 @@ img {
   z-index: -99999;
 }
 
+/* Retina-specific stuff here */
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .fon {
+    margin-top: 100px;
+    background-image: url(../images/fon-2x.png);
+    background-size: 100% 100%;
+  }
+}
 .footer {
   margin-top: 200px;
   background-color: #2C343E;
@@ -1309,7 +1350,7 @@ img {
   display: flex;
   text-decoration: none;
   list-style: none;
-  margin-left: 274px;
+  margin-left: 210px;
 }
 
 .footer__navbar {
@@ -1352,11 +1393,16 @@ img {
 }
 
 .container {
-  width: 1440px;
+  width: 1260px;
   padding: 0 20px;
   margin: 0 auto;
 }
 
+@media screen and (max-width: 1090px) {
+  .container {
+    padding: 10px;
+  }
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -1378,12 +1424,14 @@ img {
 }
 .header__box {
   display: flex;
+  align-items: center;
 }
 .header__navbar {
   margin-left: auto;
 }
 .header__navbar > ul {
   list-style: none;
+  margin-left: auto;
   display: flex;
 }
 .header__navbar > ul > li > a {
@@ -1406,7 +1454,7 @@ img {
 
 /* section1 style */
 .hero__info {
-  margin-top: 130px;
+  margin-top: 18px;
   background-image: url(../images/coffe-fon.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -1479,8 +1527,8 @@ img {
   margin-top: 168px;
   margin-left: 98px;
   display: flex;
-  background-image: url(../../images/commitment.png);
   border-radius: 10px;
+  background-image: url(../../images/commitment.png);
   background-repeat: no-repeat;
   background-position: left 0 center;
   background-size: 485px 606px;
@@ -1501,7 +1549,7 @@ img {
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
-  width: 540px;
+  width: 440px;
   color: #333D4B;
   mix-blend-mode: normal;
   opacity: 0.8;
@@ -1510,15 +1558,15 @@ img {
   display: flex;
   flex-direction: column;
   margin-top: 100px;
-  margin-left: 650px;
+  margin-left: 613px;
 }
 
 .quality {
   margin-top: 198px;
   background-color: #2C343E;
   border-radius: 10px;
-  padding: 88px 85px;
-  padding-bottom: 120px;
+  padding: 25px 85px;
+  padding-bottom: 140px;
   display: flex;
   position: relative;
 }
@@ -1526,7 +1574,7 @@ img {
   content: url(../../images/quality.jpg);
   border-radius: 10px;
   position: absolute;
-  left: 850px;
+  left: 710px;
   top: -87px;
 }
 .quality__title {
@@ -1617,6 +1665,26 @@ img {
   content: url(../../images/austraila.svg);
 }
 
+/* Retina-specific stuff here */
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .home {
+    margin-top: 100px;
+    background-image: url(../../images/home-2x.png);
+    background-size: 100% 100%;
+  }
+  .commitment {
+    background-image: url(../../images/commitment-2x.png);
+    background-repeat: no-repeat;
+    background-position: left 0 center;
+    background-size: 485px 606px;
+  }
+  .quality::after {
+    content: url(../../images/quality-2x.jpg);
+    position: absolute;
+    left: 850px;
+    top: -87px;
+  }
+}
 .footer {
   margin-top: 180px;
   background-color: #2C343E;
@@ -1630,7 +1698,7 @@ img {
   display: flex;
   text-decoration: none;
   list-style: none;
-  margin-left: 274px;
+  margin-left: 210px;
 }
 .footer__navbar {
   display: flex;

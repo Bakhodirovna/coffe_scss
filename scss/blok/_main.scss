@@ -1,6 +1,6 @@
 /* section1 style */
 .hero__info{
-    margin-top: 130px;
+    margin-top: 18px;
     background-image: url(../images/coffe-fon.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -25,6 +25,7 @@
     font-size: 72px;
     line-height: 72px;
     color: #FEFCF7;
+    width: 493px;
 }
 .hero__text{
     font-family: 'Barlow',sans-serif;
@@ -39,7 +40,7 @@
     margin-top: 32px;
 }
 .hero__button{
-    font-family: 'Fraunces';
+    font-family: 'Fraunces',sans-serif;
     font-style: normal;
     font-weight: 900;
     font-size: 18px;
@@ -51,7 +52,7 @@
     width: 217px;
     border: none;
     padding: 15px 31px;
-    margin-top: 56px;
+    margin: 56px 0;
 }
 .hero__button:hover{
     background: #66D2CF;
@@ -61,16 +62,17 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-top: 150px;
+    margin-top: 98px;
     height: 524px;
-    margin-left: 70px;
+    margin-left: 2px;
     padding-top: 100px;
+    width: 1173px;
 }
 .collection{
     background-image: url(../images/collection.jpg);
-    background-position:top -72px  center ;
+    background-position:top -18px  center ;
     background-repeat: no-repeat;
-    background-size: 1300px;
+    background-size: 1100px;
 }
 .collection__info>ul{
     display: -webkit-box;
@@ -79,15 +81,12 @@
     list-style: none; 
     z-index: 9;   
 }
-.collection__info>ul>li{
-    width: 255px;
-}
 .collection__info>ul>li+li{
-    margin-left: 80px;
+    margin-left: 66px;
 }
 .collection__title{
     margin-top: 71px;
-    font-family: 'Fraunces ';
+    font-family: 'Fraunces';
     font-style: normal;
     font-weight: 900;
     font-size: 24px;
@@ -124,6 +123,10 @@
     bottom: 50px;
     padding: 100px 370px;
     padding-bottom: 317px;
+
+    &>div+div{
+        margin-left: 20px;
+    }
 }
 .services__title{
     font-family: 'Fraunces';
@@ -206,7 +209,11 @@
 /* section4 style */
 .works{
     margin-top: 200px;
-    margin-left: 140px;
+    margin-left: 109px;
+    
+    &__info{
+        margin-left:-51px ;
+    }
 }
 .works__title-top{
     font-family: 'Fraunces';
@@ -317,7 +324,7 @@
     border-radius: 6px;
     padding:15px 31px ;
     margin-top: 64px;
-    /* margin-left: 185px; */
+     margin-left:34px; 
 }
 .works__button:hover{
     background: #66D2CF;
@@ -333,14 +340,14 @@ only screen and (        min-device-pixel-ratio: 2),
 only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) { 
   .hero__info{
-    background-image: url(../images/coffe-fon-2x.jpg);
+    background-image: url(../images/coffe.webp);
     background-repeat: no-repeat;
     // background-size: 100% 100%;
     background-size: contain;
     background-position: center;
   }
   .collection{
-    background-image: url(../images/collection-2x.jpg);
+    background-image: url(../images/collection.webp);
     background-position:top -72px  center ;
     background-repeat: no-repeat;
     background-size: 1300px;
